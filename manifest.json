@@ -1,0 +1,20 @@
+{
+	"manifest_version": 3,
+	"name": "Mutate theme-color",
+	"description": "Mutates <meta name=theme-color> with white color on websites",
+	"version": "15.1.2023",
+	"icons": {
+		"128": "icon 128.png"
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"<all_urls>"
+			],
+			"js": [
+				"contentscripts.js"
+			],
+			"run_at": "document_start"
+		}
+	]
+}
